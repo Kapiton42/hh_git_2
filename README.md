@@ -13,11 +13,11 @@ git clone https://github.com/hhru/frontik.git
 
 //Команда в репозитории, где будет только папка testing
 
-git filter-branch --tag-name-filter cat --tree-filter 'rm -rf  ./frontik/testing' --prune-empty -- --all
+git filter-branch --tag-name-filter cat --subdirectory-filter './frontik/testing/' --prune-empty -- --all
 
 //Команда в репозитории, где будет все остальное
 
-git filter-branch --tag-name-filter cat --subdirectory-filter './frontik/testing/' --prune-empty -- --all
+git filter-branch --tag-name-filter cat --tree-filter 'rm -rf  ./frontik/testing' --prune-empty -- --all
 
 git remote rm origin
 

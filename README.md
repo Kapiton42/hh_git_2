@@ -21,6 +21,6 @@ git filter-branch --tag-name-filter cat --tree-filter 'rm -rf  ./frontik/testing
 
 git remote rm origin
 
-git remote add origin https://github.com/Kapiton42/FrontikInclTesting.git//FrontikNotIncludeTesting для всего остального
+git remote add origin https://github.com/Kapiton42/FrontikInclTesting.git  //FrontikNotIncludeTesting для всего остального
 
 git push -u origin master

@@ -8,8 +8,6 @@ for branch in `git branch -r | grep -v HEAD | grep -v master `; do
    git branch --track $branch
 done
 
-git init
-
 git clone https://github.com/hhru/frontik.git
 
 
